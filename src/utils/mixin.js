@@ -92,6 +92,12 @@ export const ebookMixin = {
                     if (cb) cb()
                 })
             }
+        },
+        hideTitleAndMenu () {
+//          this.$store.dispatch('setMenuVisible', false)
+            this.setMenuVisible(false)
+            this.setSettingVisible(-1)
+            this.setFontFamilyVisible(false)
         }
     }
 }
